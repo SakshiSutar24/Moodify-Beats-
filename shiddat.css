@@ -1,0 +1,127 @@
+/* ===== Reset / Base ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    /* शिद्दत सिंगल पेजसारखी लाल-गडद थीम */
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* ===== Playlist Container ===== */
+  .playlist-container {
+    width: 80%;
+    max-width: 800px;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+    max-height: 90vh;
+    overflow-y: auto;
+    text-align: center;
+  }
+  
+  .playlist-container h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  /* ===== Song List ===== */
+  .song-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .song {
+    display: flex;
+    align-items: center;
+    background: #1f1f1f;
+    padding: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s;
+    position: relative;
+    width: 100%; /* Adjusted width */
+    max-width: 600px; /* Set a maximum width */
+    margin: 0 auto; /* Center the song box */
+  }
+  
+  .song:hover {
+    background: #2a2a2a;
+  }
+  
+  .song img {
+    width: 70px;
+    height: 70px;
+    border-radius: 10px;
+    margin-right: 15px;
+    object-fit: cover;
+  }
+  
+  .song-info {
+    flex-grow: 1;
+    text-align: left;
+  }
+  
+  .song-info h2 {
+    font-size: 1.2rem;
+    margin: 5px 0;
+  }
+  
+  .song-info p {
+    font-size: 0.9rem;
+    opacity: 0.8;
+  }
+  
+  /* ===== Play Button ===== */
+  .play-btn {
+    background: #7e0a46; /* Spotify Green */
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: 0.3s;
+  }
+  
+  .play-btn:hover {
+    background: #7e0a46;
+  }
+  
+  /* ===== Audio Element Hidden ===== */
+  audio {
+    display: none;
+  }
+  .link{
+    align-items: center;
+  }
+  .link {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    align-items: center;
+}
+
+.link a {
+    background-color: #7e0a46;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.link a:hover {
+    background-color: #5e0834;
+    transform: scale(1.05);
+}

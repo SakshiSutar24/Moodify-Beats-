@@ -1,0 +1,138 @@
+body {
+    background: url('search.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.search-container {
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.search-bar {
+    width: 80%;
+    max-width: 600px;
+    padding: 15px;
+    font-size: 18px;
+    border-radius: 30px;
+    border: 1px solid #ccc;
+    outline: none;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    color: rgb(10, 9, 9);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.search-bar:focus {
+    box-shadow: 0px 0px 15px rgba(79, 70, 229, 0.5);
+    transform: scale(1.02);
+}
+
+.mood-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding: 30px;
+}
+
+.mood-box {
+    background: linear-gradient(135deg, #1e3a8a, #4f46e5);
+    padding: 20px 35px;
+    border-radius: 12px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mood-box:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 4px 15px rgba(255, 255, 255, 0.2);
+}
+
+.results-container ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.results-container li {
+    padding: 12px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: color 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+}
+
+.results-container li:hover {
+    color: #4f46e5;
+}
+
+.song-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.song-info {
+    text-align: left;
+}
+
+.no-results-message {
+    display: none;
+    color: red;
+    margin-top: 20px;
+    text-align: center;
+}
+
+a {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    color: #4f46e5;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+audio {
+    display: block;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 600px;
+}
+
+.audio-controls {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.audio-controls button {
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: rgb(242, 237, 237);
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s ease;
+}
+
+.audio-controls button:hover {
+    background: #3b3a9a;
+}

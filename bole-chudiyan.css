@@ -1,0 +1,109 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.playlist-container {
+  padding: 40px;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+  margin: 20px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.song-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.song {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: #282828;
+  padding: 15px;
+  border-radius: 10px;
+  transition: background 0.3s;
+}
+
+.song:hover {
+  background: #333;
+}
+
+.song img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.song-info {
+  flex-grow: 1;
+}
+
+.song-info h2 {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+.song-info p {
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+.play-btn {
+    background: #7e0a46; /* Spotify Green */
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+.play-btn:hover {
+    background: #7e0a46;
+}
+.link{
+    align-items: center;
+  }
+  .link {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    align-items: center;
+}
+
+.link a {
+    background-color: #7e0a46;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.link a:hover {
+    background-color: #5e0834;
+    transform: scale(1.05);
+}

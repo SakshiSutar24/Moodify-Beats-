@@ -1,0 +1,288 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.playlist-container {
+  max-width: 800px;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.song-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.song {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 10px;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+}
+
+.song:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.song img {
+  width: 60px;
+  height: 60px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.song-info {
+  flex-grow: 1;
+  margin-left: 15px;
+}
+
+.song-info h2 {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+.song-info p {
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+.play-btn {
+  background: none;
+  border: none;
+  color: #f4f3f8;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.play-btn:hover {
+  color: #9f0d56;
+}
+
+.home-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: #7e0a46;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.home-btn:hover {
+  background-color: #5e0834;
+}
+
+/* Header / Hero Section */
+.album-header {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.album-top {
+  display: flex;
+  align-items: flex-end;
+  gap: 30px;
+}
+
+.album-cover {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+}
+
+.album-info h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.album-info p {
+  font-size: 0.95rem;
+  opacity: 0.9;
+  margin-bottom: 5px;
+}
+
+.album-type {
+  font-weight: bold;
+  margin-bottom: 8px;
+  opacity: 0.8;
+}
+
+/* About Section (Movie Info) */
+.movie-info {
+  margin-top: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 15px;
+  border-radius: 8px;
+  line-height: 1.5;
+}
+
+/* Buttons (Play / Link) */
+.btn-group {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.play-button {
+  background-color: #12034d; /* Spotify Green */
+  color: #fff;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.play-button:hover {
+  background-color: #0b0f28;
+}
+
+.gangubai-link {
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 12px 30px;
+  border-radius: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.gangubai-link:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Tracks Section */
+.tracks-section {
+  padding: 20px 40px;
+  flex-grow: 1;
+  background: rgba(135deg, #0f172a, #1e293b);
+}
+
+.tracks-section h2 {
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+}
+
+.track-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #030303;
+  padding: 10px 15px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  transition: background 0.2s ease;
+}
+
+.track-item:hover {
+  background-color: #2a2a2a;
+}
+
+.track-left {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.track-play {
+  cursor: pointer;
+}
+
+.track-title {
+  font-weight: 500;
+}
+
+.track-duration {
+  opacity: 0.8;
+}
+
+/* Footer (Optional) */
+.footer {
+  text-align: center;
+  padding: 10px;
+  font-size: 0.8rem;
+  background: #000;
+  color: #fff;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .album-top {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .album-info h1 {
+    font-size: 2rem;
+  }
+  .tracks-section {
+    padding: 20px;
+  }
+}
+
+.link {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.play-btn {
+  background-color: #920955;
+  border: none;
+  color: white;
+  padding: 11px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+.play-btn:hover {
+  background-color: #f5eeee;
+}

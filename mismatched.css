@@ -1,0 +1,117 @@
+/* ===== Reset / Base ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Adjusted width */
+    max-width: 1200px; /* Set a maximum width */
+    margin: 0 auto; /* Center the body content */
+}
+
+/* ===== Playlist Container ===== */
+.playlist-container {
+    width: 80%;
+    max-width: 800px;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+    max-height: 90vh;
+    overflow-y: auto;
+    text-align: center;
+}
+
+.playlist-container h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* ===== Song List ===== */
+.song-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.song {
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 10px;
+    transition: background 0.3s ease, transform 0.3s ease;
+    position: relative;
+    width: 100%; /* Adjusted width to make it larger */
+    max-width: 800px; /* Set a maximum width */
+    margin: 0 auto; /* Center the song box */
+}
+
+.song:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: scale(1.02);
+}
+
+.song img {
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    margin-right: 15px;
+    object-fit: cover;
+}
+
+.song-info {
+    flex-grow: 1;
+    text-align: left;
+}
+
+.song-info h2 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.song-info p {
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+.play-btn {
+    background: linear-gradient(45deg, #3b82f6, #2563eb);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+.play-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 8px rgba(59, 130, 246, 0.7);
+}
+
+audio {
+    display: none;
+  }
+
+.link {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    align-items: center;
+}
+
+.link a:hover {
+    background-color: #2563eb;
+    transform: scale(1.05);
+}
