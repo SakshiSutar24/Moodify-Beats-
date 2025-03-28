@@ -1,0 +1,202 @@
+/* Admin Dashboard Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    background: url("admin.png") no-repeat center center fixed;
+    margin: 0;
+    padding: 20px; /* Add padding around the form */
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.9); /* Slightly darker background */
+    padding: 20px 40px; /* Adjust padding for better spacing */
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Add a subtle shadow */
+    z-index: 1000;
+}
+
+.navbar .welcome-text {
+    margin: 0;
+    font-size: 1.6em;
+    font-weight: bold;
+    color: #fff;
+    text-transform: capitalize; /* Capitalize the text */
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 0.9em;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: rgba(63, 94, 251, 0.9); /* Highlight link on hover */
+}
+
+.navbar .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin: 0;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    transition: color 0.3s ease;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar ul li {
+    margin: 0 20px; /* Add spacing between links */
+}
+
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1em;
+    padding: 8px 15px; /* Add padding for better click area */
+    border-radius: 5px; /* Rounded corners for links */
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    background-color: rgba(63, 94, 251, 0.8); /* Add hover background */
+    color: #fff; /* Ensure text remains white on hover */
+}
+
+.dashboard-container {
+    background: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px;
+            border: 1px solid #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(26, 25, 25, 0.4);
+            text-align: center;
+            max-width: 500px;
+            font-weight: bold;
+            color: #fff;;
+            width: 350px;
+}
+
+.dashboard-header {
+    text-align: center;
+    margin-bottom: 20px;
+    align-self: center; /* Center the header */
+}
+
+.dashboard-header h1 {
+    text-align: left;
+    font: size 4px;; /* Slightly increase font size */
+    color: rgba(63, 94, 251, 0.9);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px; /* Adjust spacing below the header */
+}
+
+.dashboard-grid {
+    display: flex; /* Change to flex for form-like layout */
+    flex-direction: column; /* Stack items vertically */
+    gap: 15px; /* Adjust gap for better spacing */
+    width: 100%;
+}
+
+.dashboard-card {
+    background: none; /* Remove card background */
+    color: #fff;
+    padding: 0; /* Remove padding */
+    border-radius: 8px; /* Slightly smaller border radius */
+    text-align: left; /* Align text to the left */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: none; /* Remove card shadow */
+    margin-bottom: 0; /* Remove extra spacing */
+}
+
+.dashboard-card:hover {
+    transform: scale(1.05);
+}
+
+.dashboard-card h3 {
+    text-align: left; /* Align text to the left */
+    font-size: 3em; /* Adjust font size for labels */
+    margin-bottom: 5px; /* Add spacing below labels */
+}
+.dashboard-card p {
+    display: none; /* Hide unnecessary text */
+}
+
+.dashboard-input {
+    width: 100%; /* Full width for inputs */
+    padding: 8px 12px; /* Adjust padding for input fields */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 1em; /* Adjust font size */
+    margin-bottom: 15px; /* Add spacing between inputs */
+    height: 40px; /* Standardize input height */
+}
+
+.dashboard-input:focus {
+    outline: none; /* Remove default outline */
+    border-color: rgba(63, 94, 251, 0.5); /* Highlight border on focus */
+    box-shadow: 0px 0px 5px rgba(63, 94, 251, 0.5); /* Add glow effect */
+
+}
+
+.dashboard-button {
+    align-self: center; /* Center the button */
+    margin-top: 20px; /* Add more spacing */
+    padding: 12px 24px; /* Increase button size */
+    background: rgba(210, 7, 129, 0.10);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.9em; /* Reduce font size */
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+    font-weight: bold; /* Make text bold */
+    text-transform: uppercase; /* Add uppercase text */
+    width: 100%; /* Make the button full-width */
+}
+
+.dashboard-button:hover {
+    background: rgba(234, 14, 146,0.10);
+    transform: scale(1.1);
+}
+
+        /* Back to Home Button */
+        .home-btn {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            background: linear-gradient(45deg, #3b82f6, #2563eb);
+            border: none;
+            color: #fff;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            font-size: 1.2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .home-btn:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 8px rgba(59, 130, 246, 0.7);
+        }

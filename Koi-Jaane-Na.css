@@ -1,0 +1,123 @@
+/* ===== Reset / Base ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ===== Playlist Container ===== */
+.playlist-container {
+    width: 80%;
+    max-width: 800px;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+    max-height: 90vh;
+    overflow-y: auto;
+    text-align: center;
+}
+
+.playlist-container h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* ===== Song List ===== */
+.song-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.song {
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 10px;
+    transition: background 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+}
+
+.song:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: scale(1.02);
+}
+
+.song img {
+    width: 60px;
+    height: 60px;
+    border-radius: 8px;
+    margin-right: 15px;
+}
+
+.song-info {
+    flex-grow: 1;
+}
+
+.song-info h2 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.song-info p {
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+.play-btn {
+    background: linear-gradient(45deg, #3b82f6, #2563eb);
+    border: none;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.play-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 8px rgba(59, 130, 246, 0.7);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .playlist-container {
+        width: 95%;
+    }
+
+    .song img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .song-info h2 {
+        font-size: 1rem;
+    }
+
+    .song-info p {
+        font-size: 0.8rem;
+    }
+
+    .play-btn {
+        width: 35px;
+        height: 35px;
+        font-size: 1rem;
+    }
+}

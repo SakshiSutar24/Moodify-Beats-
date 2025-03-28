@@ -1,0 +1,101 @@
+body {
+    font-family: Arial, sans-serif;
+    background: url('1page.png') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    width: 300px;
+    background-color: rgba(0, 0, 0, 0.5); /* Darker for better readability */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Regular shadow */
+    border-radius: 15px;
+    padding: 20px;
+}
+.container {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+    text-align: center;
+    color: #fff;
+    width: 350px;
+    max-width: 400px; /* Added max-width for better responsiveness */
+}
+h1{
+    color: white;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-size: 1.8rem; /* Slightly larger heading for emphasis */
+}
+h2 {
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-size: 1.8rem; /* Slightly larger heading for emphasis */
+}
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 15px;
+    font-size: 1rem; /* Improved font size for better readability */
+    background: rgba(19, 17, 17, 0.4); /* Subtle background for inputs */
+    color: #fff; /* Ensure text is visible */
+}
+.btn {
+    background: #ff5733;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s ease; /* Smooth transition for hover effect */
+}
+.btn:hover {
+    background: #e04d2a;
+}
+.submit {
+    margin-top: 15px;
+    display: block;
+    color: #ff5733;
+    text-decoration: none;
+    font-size: 0.9rem; /* Slightly smaller font for links */
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+.submit:hover {
+    color: #e04d2a; /* Add hover effect for links */
+}
+
+        /* Back to Home Button */
+        .home-btn {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            background: linear-gradient(45deg, #3b82f6, #2563eb);
+            border: none;
+            color: #fff;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            font-size: 1.2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .home-btn:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 8px rgba(59, 130, 246, 0.7);
+        }

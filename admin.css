@@ -1,0 +1,182 @@
+/* Admin Panel Styling */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, rgba(255, 182, 229, 0.8), rgba(255, 240, 245, 0.8));
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+.container {
+    width: 80%;
+    margin: 0; /* Remove auto margin as centering is handled by flexbox */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 400px;
+    width: 300px;
+    justify-content: center;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+    color: #333;
+    font-size: 1.8em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background: rgba(219, 112, 147, 0.9); /* Dark pink */
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+td {
+    background: #f9f9f9;
+    transition: background 0.3s ease;
+}
+
+td:hover {
+    background: rgba(255, 182, 193, 0.5); /* Light pink */
+}
+
+a {
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background: rgba(219, 112, 147, 0.9); /* Dark pink */
+    color: white;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+a:hover {
+    background: rgba(199, 92, 127, 0.9); /* Slightly darker pink */
+    transform: scale(1.1);
+}
+
+.delete-btn {
+    background: rgba(219, 112, 147, 0.9); /* Dark pink */
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.delete-btn:hover {
+    background: rgba(199, 92, 127, 0.9); /* Slightly darker pink */
+    transform: scale(1.1);
+}
+
+form {
+    width: 100%;
+    max-width: 500px;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"],
+form textarea,
+form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 1em;
+}
+
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form input[type="password"]:focus,
+form textarea:focus,
+form select:focus {
+    border-color: rgba(207, 7, 134, 0.9); /* Dark pink */
+    outline: none;
+    box-shadow: 0px 0px 5px rgba(207, 7, 134, 0.9)
+}
+
+form button {
+    background: rgba(207, 7, 134, 0.9); /* Dark pink */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+form button:hover {
+    background: rgba(212, 5, 126, 0.9); /* Slightly darker pink */
+    transform: scale(1.05);
+}
+
+        /* Back to Home Button */
+        .home-btn {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            background: linear-gradient(45deg, #3b82f6, #2563eb);
+            border: none;
+            color: #fff;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            font-size: 1.2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .home-btn:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 8px rgba(59, 130, 246, 0.7);
+        }
